@@ -3,7 +3,6 @@ class Book{
     String name, author;
     int num_pages;
     double price;
-	
 
     void setDetails(){
         Scanner sc = new Scanner(System.in);
@@ -30,7 +29,8 @@ class Book{
 
 class BookDemo{
     public static void main(String args[]){
-
+	
+	
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of books: ");
         int bookNum = sc.nextInt();
@@ -45,9 +45,11 @@ class BookDemo{
 
         for (int i = 0; i<bookNum; i++){
         bookArray[i].getDetails();
+	System.out.println(bookArray[i]);
+		
         }
-
-	System.out.println("Name:Anirudh R");
-	System.out.println("USN:1BM23CS036");
+	System.out.print("Name: Anirudh	R");
+	System.out.print("USN: 1BM23CS036");
     }
 }
+
